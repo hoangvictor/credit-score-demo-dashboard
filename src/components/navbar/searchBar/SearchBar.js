@@ -20,7 +20,7 @@ export function SearchBar(props) {
   // Chakra Color Mode
   const searchIconColor = useColorModeValue("gray.100");
   const inputBg = useColorModeValue("navy.900");
-  const inputText = useColorModeValue("gray.100");
+  const inputText = useColorModeValue("black");
   const handleClickEvent = () => {
     axios.get("http://144.126.242.191:36000/get-info")
         .then((response) => {
