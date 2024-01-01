@@ -82,7 +82,7 @@ export default function Prediction() {
                         </Field>
                         <Button
                             mt={4}
-                            colorScheme='teal'
+                            colorScheme='blue'
                             isLoading={props.isSubmitting}
                             type='submit'
                         >

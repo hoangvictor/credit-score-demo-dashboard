@@ -214,7 +214,7 @@ export default function UserReports() {
         </SimpleGrid> */}
       <Button
         mt={4}
-        colorScheme='teal'
+          colorScheme='blue'
         type='submit'
         onClick={() => {
           cookies.remove('infoResponse');
