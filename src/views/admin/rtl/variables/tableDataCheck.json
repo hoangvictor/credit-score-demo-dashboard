@@ -1,0 +1,31 @@
+[{
+  "Month":["Horizon UI PRO",false],
+  "Building Type": 2458, 
+  "Type of Fire": "12 Jan 2021",
+  "Number of People Rescued": 17.5  
+},
+{
+  "Month":["Horizon UI Free",true],
+  "Building Type": 1485, 
+  "Type of Fire": "21 Feb 2021",
+  "Number of People Rescued": 10.8  
+},
+{
+  "Month":["Weekly UpType of Fire",true],
+  "Building Type": 1024, 
+  "Type of Fire": "13 Mar 2021",
+  "Number of People Rescued": 21.3  
+},
+{
+  "Month":["Venus 3D Asset",true],
+  "Building Type": 858, 
+  "Type of Fire": "24 Jan 2021",
+  "Number of People Rescued": 31.5  
+},
+{
+  "Month":["Marketplace",false],
+  "Building Type": 258, 
+  "Type of Fire": "24 Oct 2022",
+  "Number of People Rescued": 12.2  
+}
+]

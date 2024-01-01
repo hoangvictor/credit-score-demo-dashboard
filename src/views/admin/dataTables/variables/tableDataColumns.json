@@ -1,0 +1,26 @@
+[
+  {
+    "Month":"Marketplace",
+    "Building Type": 2458, 
+    "Type of Fire": "12.Jan.2021",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":"Venus DB PRO",
+    "Building Type": 1485, 
+    "Type of Fire": "21.Feb.2021",
+    "Number of People Rescued": 35.4  
+  },
+  {
+    "Month":"Venus DS",
+    "Building Type": 1024, 
+    "Type of Fire": "13.Mar.2021",
+    "Number of People Rescued": 25  
+  },
+  {
+    "Month":"Venus 3D Asset",
+    "Building Type": 858, 
+    "Type of Fire": "24.Jan.2021",
+    "Number of People Rescued": 100  
+  }
+]

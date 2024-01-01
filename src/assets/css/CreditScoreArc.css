@@ -1,0 +1,213 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#mainCard {
+  width: 100%;
+  height: 250px;
+  background: white;
+  border-radius: 15px;
+  padding: 1em;
+  margin-right: 0%;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+
+  .columnContainer {
+    p:first-child {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    p:nth-child(2) {
+      text-align: center;
+    }
+
+    #factors {
+      color: red;
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 10px;
+      color: grey;
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+#arc {
+  margin: 5% 31%;
+  position: relative;
+
+  #low {
+    position: absolute;
+    bottom: -130px;
+    left: -5px;
+  }
+
+  #high {
+    position: absolute;
+    bottom: -130px;
+    left: 205px;
+  }
+
+  #currentScoreContainer {
+    position: absolute;
+    bottom: -130px;
+    left: 65px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    text-align: center;
+
+    #currentScore {
+      font-size: 45px;
+      font-weight: bolder;
+    }
+
+    #currentScoreDetail {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.line {
+  height: 10px;
+  border: 1px solid grey;
+}
+
+#bad {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid #ff6364;
+  border-bottom: 0;
+  clip-path: polygon(0 0, 20% 0, 25% 100%, 0 100%);
+  position: absolute;
+}
+
+#poor {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid #ff883a;
+  border-bottom: 0;
+  clip-path: polygon(20% 0, 42% 0, 42% 100%, 25% 100%);
+  position: absolute;
+}
+
+#fair {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid #fdd42d;
+  border-bottom: 0;
+  clip-path: polygon(42% 0, 58% 0, 58% 100%, 42% 100%);
+  position: absolute;
+}
+
+#good {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid #0192f5;
+  border-bottom: 0;
+  clip-path: polygon(58% 0, 80% 0, 75% 100%, 58% 100%);
+  position: absolute;
+}
+
+#excellent {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid #3fd796;
+  border-bottom: 0;
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 75% 100%);
+  position: absolute;
+}
+
+.accent {
+  color: grey;
+  font-size: 15px;
+}
+
+.grid {
+  height: 300px;
+  width: 100%;
+  display: grid;
+  margin: 5px auto;
+  padding: 5px -5px;
+  margin-top: 190px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gridBox {
+  background: rgba(0, 0, 0, 0.05);
+  height: 75px;
+  margin: 3px;
+  margin-top: -10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+
+  .line {
+    height: 100%;
+    width: 3px;
+    border: none;
+  }
+
+  .line.good {
+    background: #3fd796;
+  }
+
+  .line.avg {
+    background: #fdd42d;
+  }
+
+  .line.bad {
+    background: #ff6364;
+  }
+
+  .gridDetail {
+    padding: 10px;
+
+    .mainInfo {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .detailInfo {
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+#dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: auto;
+  background: white;
+  border: 6px solid grey;
+  display: block;
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 2458, 
+    "Type of Fire": "12.Jan.2021",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Venus DB PRO",true],
+    "Building Type": 1485, 
+    "Type of Fire": "21.Feb.2021",
+    "Number of People Rescued": 35.4  
+  },
+  {
+    "Month":["Venus DS",true],
+    "Building Type": 1024, 
+    "Type of Fire": "13.Mar.2021",
+    "Number of People Rescued": 25  
+  },
+  {
+    "Month":["Venus 3D Asset",true],
+    "Building Type": 858, 
+    "Type of Fire": "24.Jan.2021",
+    "Number of People Rescued": 100  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 258, 
+    "Type of Fire": "Oct 24, 2022",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 258, 
+    "Type of Fire": "Oct 24, 2022",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 258, 
+    "Type of Fire": "12.Jan.2021",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Venus DB PRO",false],
+    "Building Type": 858, 
+    "Type of Fire": "21.Feb.2021",
+    "Number of People Rescued": 35.4  
+  },
+  {
+    "Month":["Venus DS",false],
+    "Building Type": 1024, 
+    "Type of Fire": "13.Mar.2021",
+    "Number of People Rescued": 25  
+  },
+  {
+    "Month":["Venus 3D Asset",false],
+    "Building Type": 258, 
+    "Type of Fire": "24.Jan.2021",
+    "Number of People Rescued": 100  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 1024, 
+    "Type of Fire": "Oct 24, 2022",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 258, 
+    "Type of Fire": "Oct 24, 2022",
+    "Number of People Rescued": 75.5  
+  },
+  {
+    "Month":["Marketplace",false],
+    "Building Type": 258, 
+    "Type of Fire": "Oct 24, 2022",
+    "Number of People Rescued": 75.5  
+  }
+]

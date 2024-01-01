@@ -1,0 +1,19 @@
+[{
+  "Month":[5],
+  "Building Type": "Residential", 
+  "Type of Fire": "Chemical",
+  "Number of People Rescued": 5 
+},
+{
+  "Month":[10],
+  "Building Type": "Residential", 
+  "Type of Fire": "Chemical",
+  "Number of People Rescued": 36
+},
+{
+  "Month":[8],
+  "Building Type": "Commercial", 
+  "Type of Fire": "Negligence",
+  "Number of People Rescued": 27
+}
+]
