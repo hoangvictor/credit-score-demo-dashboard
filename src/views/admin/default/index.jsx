@@ -45,6 +45,21 @@ import { SearchBar } from 'components/navbar/searchBar/SearchBar';
 import CreditScoreArc from "components/card/CreditScoreArc";
 import Cookies from 'universal-cookie';
 
+import MiniCalendar from "components/calendar/MiniCalendar";
+import CheckTable from "views/admin/default/components/CheckTable";
+import ComplexTable from "views/admin/default/components/ComplexTable";
+import DailyTraffic from "views/admin/default/components/DailyTraffic";
+import PieCard from "views/admin/default/components/PieCard";
+import Tasks from "views/admin/default/components/Tasks";
+import TotalSpent from "views/admin/default/components/TotalSpent";
+import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
+import {
+  columnsDataCheck,
+  columnsDataComplex,
+} from "views/admin/default/variables/columnsData";
+import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
+import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
+
 export default function UserReports() {
   // Chakra Color Mode
   const cookies = new Cookies();
@@ -155,7 +170,7 @@ export default function UserReports() {
               w='56px'
               h='56px'
               bg={boxBg}
-                icon={<Icon w='28px' h='28px' as={MdNoteAdd} color='white' />}
+                icon={<Icon w='28px' h='28px' as={MdNoteAdd} color={brandColor} />}
             />
           }
           name='Loan Amounts Overdue For 60 - 89 Days In The Last 2 Years'
@@ -176,15 +191,27 @@ export default function UserReports() {
           value={infoResponse.loanAmountsOverdueFor90DaysInTheLast2Years}
         />
       </SimpleGrid>
-      {/* <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
-        <ComplexTable
-          columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
-        />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
-          
+        <SimpleGrid columns={{ base: 1 }} gap='20px' mb='20px'>
+          <TotalSpent chartData={infoResponse.loanAmountsOverdueByMonth} />
+          {/* <WeeklyRevenue /> */}
         </SimpleGrid>
-      </SimpleGrid> */}
+        {/* <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
+          <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
+          <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
+            <DailyTraffic />
+            <PieCard />
+          </SimpleGrid>
+        </SimpleGrid> */}
+        {/* <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
+          <ComplexTable
+            columnsData={columnsDataComplex}
+            tableData={tableDataComplex}
+          />
+          <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
+            <Tasks />
+            <MiniCalendar h='100%' minW='100%' selectRange={false} />
+          </SimpleGrid>
+        </SimpleGrid> */}
       <Button
         mt={4}
         colorScheme='teal'

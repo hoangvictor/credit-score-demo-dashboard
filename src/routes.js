@@ -3,7 +3,7 @@ import React from "react";
 import { Icon } from "@chakra-ui/react";
 import {
   MdHome,
-  MdFireExtinguisher,
+  MdOutlineBatchPrediction,
 } from "react-icons/md";
 
 // Admin Imports
@@ -24,7 +24,7 @@ const routes = [
     path: "/prediction",
     icon: (
       <Icon
-        as={MdFireExtinguisher}
+        as={MdOutlineBatchPrediction}
         width='20px'
         height='20px'
         color='inherit'

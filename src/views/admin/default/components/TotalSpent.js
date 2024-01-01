@@ -16,12 +16,17 @@ import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {
-  lineChartDataTotalSpent,
   lineChartOptionsTotalSpent,
 } from "variables/charts";
 
 export default function TotalSpent(props) {
   const { ...rest } = props;
+  const lineChartDataTotalSpent = [
+    {
+      name: "Loan Amounts Overdue Over Time",
+      data: rest.chartData,
+    },
+  ];
 
   // Chakra Color Mode
 
@@ -61,7 +66,7 @@ export default function TotalSpent(props) {
               fontWeight='500'
               mt='4px'
               me='12px'>
-              Width of Nearby Roads (m) vs Damage Scale
+              Loan Amounts Overdue
             </Text>
             
           </Flex>

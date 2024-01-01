@@ -254,10 +254,9 @@ export const pieChartData = [38.33, 18.31, 43.36];
 // Total Spent Default
 
 export const lineChartDataTotalSpent = [
-
   {
-    name: "Width of Nearby Roads (m)",
-    data: [11.898, 11.497, 11.464],
+    name: "Loan Amounts Overdue Over Time",
+    data: [120000, 130000, 160000, 180000, 190000, 210000, 240000, 270000, 320000, 110000, 105000, 120000],
   },
 ];
 
@@ -303,7 +302,7 @@ export const lineChartOptionsTotalSpent = {
   },
   xaxis: {
     type: "numeric",
-    categories: ["Small", "Medium", "Large"],
+    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov","Dec"],
     labels: {
       style: {
         colors: "#A3AED0",
@@ -319,10 +318,11 @@ export const lineChartOptionsTotalSpent = {
     },
   },
   yaxis: {
-    show: false,
+    show: true,
+    color: ["#7551FF", "#39B8FF"],
   },
   legend: {
-    show: false,
+    show: true,
   },
   grid: {
     show: false,
